@@ -75,6 +75,16 @@ body{
   transform: rotate(180deg);
   font-size: 8.7rem;
   display: flex;
+  margin-right: -4.8rem;
+  margin-left: 3rem;
+}
+
+.name {
+  background-image: url(/img/bgTexture.png);
+ background-size: cover;
+ background-clip: text;
+ -webkit-background-clip: text;
+ color: transparent;
 }
 
 .backname {
@@ -107,17 +117,21 @@ body{
   list-style: none;
 }
 
+.info {
+  padding-left: 1vw;
+  text-align: center;
+}
+
 .pdf__link:link, 
 .pdf__link:visited {
-  margin-top: 1rem;
-  white-space: pre;
+  margin-top: 1.5rem;
   font-size: 1.6rem;
+  text-align: end;
   font-weight: 600;
   color: #e4e2d8;
+  display: block;
   text-decoration: underline;
   text-transform: uppercase;
-  text-align: start;
-  display:block;
   transition: all .2s
 }
 
