@@ -81,7 +81,7 @@ body {
 }
 
 .name {
-  background-image: url(/img/bgTexture.png);
+  background-image: url(/img/bgTexture.webp);
  background-size: cover;
  background-clip: text;
  -webkit-background-clip: text;
@@ -96,7 +96,7 @@ body {
 .bar-top {
  grid-area: topline;
  z-index: -3;
- background-image: url(/img/bgTexture.png);
+ background-image: url(/img/bgTexture.webp);
  background-size: cover;
  margin-left: -2rem;
  background-color: #000000;
@@ -145,7 +145,7 @@ body {
 .pdf__link:hover, 
 .pdf__link:active { 
   text-decoration: none;
-  background-image: url(img/bgTexture.png);
+  background-image: url(img/bgTexture.webp);
   background-size: cover;
   color: #000000;
   transform: translateY(-3px);
@@ -153,7 +153,7 @@ body {
 
 .gallery {
   grid-area: gallery;
-  background-image: url(img/bgTexture.png);
+  background-image: url(img/bgTexture.webp);
   background-size: cover;
   height: 110%;
   margin-top: -3rem;
