@@ -26,8 +26,6 @@ body {
   grid-template-areas: "sidebar topline topline topline" "sidebar gallery gallery gallery" "sidebar gallery gallery gallery" "sidebar gallery gallery gallery" "sidebar btmline btmline btmline";
   grid-auto-columns: repeat(auto-fit, minmax(-10rem, 1fr));
   grid-template-rows: 5vh repeat(3, 25vh) 1fr;
-  
-  position: fixed;
 }
 
 .header { 
@@ -73,10 +71,9 @@ body {
 
 .sidebar-name {
   color: #e4e2d8;
-  max-width: 100vh;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size: 8.6rem;
+  font-size: 8.5rem;
   display: flex;
   align-self: center;
   margin-right: -4.72rem;
@@ -158,8 +155,8 @@ body {
   grid-area: gallery;
   background-image: url(img/bgTexture.png);
   background-size: cover;
-  /* overflow: hidden; */
   height: 110%;
+  margin-top: -3rem;
   margin-left: -4rem;
   margin-right: -4rem;
   z-index: -100000;
@@ -180,8 +177,6 @@ body {
   position: absolute;
 }
 
-/* current */
-
 .fading-slideshow > li:first-of-type {
   animation-name: fader;
   animation-delay: 4s;
@@ -189,13 +184,9 @@ body {
   z-index: 20;
 }
 
-/* next */
-
 .fading-slideshow > li:nth-of-type(2) {
   z-index: 10;
 }
-
-/* other */
 
 .fading-slideshow > li:nth-of-type(n+3) {
   display: none;

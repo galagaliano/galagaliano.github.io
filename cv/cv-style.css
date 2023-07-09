@@ -35,7 +35,7 @@ body {
 
 .content {
   grid-area: content;
-  width: 100%;
+  color: #5d5d5d;
 }
 
 .profile-header {
@@ -69,7 +69,7 @@ body {
 .profile-description {
   justify-content: space-between;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   color: #5d5d5d;
   list-style: none;
   padding-left: 0;
@@ -90,6 +90,45 @@ body {
 }
 
 .profile-info {
+  margin-top: 3rem;
+  gap: 3rem;
   display: flex;
+  align-items: center;
+  font-size: 1.2rem;
   flex-direction: column;
+}
+
+.profile-title{
+  display: flex;
+  align-items: baseline;
+}
+
+li {
+  list-style: none;
+}
+
+
+.link__icon {
+  width: .9rem;
+  height: 1.6rem;
+  object-fit: contain;
+  position: absolute;
+  margin-left: .3rem;
+  color: #000000;
+}
+
+.nav__link {
+  position: relative;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  text-decoration: underline;
+  color: #5d5d5d;
 }
