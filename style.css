@@ -21,18 +21,20 @@ body {
   min-height: 100vh;
 }
 
-.header { 
-  font-family: "Overpass", sans-serif;
-  font-weight: 700; 
-  letter-spacing: -0.5px;
-} 
-
 .container {
   display: grid;
   grid-template-areas: "sidebar topline topline topline" "sidebar gallery gallery gallery" "sidebar gallery gallery gallery" "sidebar gallery gallery gallery" "sidebar btmline btmline btmline";
   grid-auto-columns: repeat(auto-fit, minmax(-10rem, 1fr));
   grid-template-rows: 5vh repeat(3, 25vh) 1fr;
+  
+  position: fixed;
 }
+
+.header { 
+  font-family: "Overpass", sans-serif;
+  font-weight: 700; 
+  letter-spacing: -0.5px;
+} 
 
 .sidebar {
   grid-area: sidebar;
@@ -74,9 +76,10 @@ body {
   max-width: 100vh;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size: 8.7rem;
+  font-size: 8.6rem;
   display: flex;
-  margin-right: -4.84rem;
+  align-self: center;
+  margin-right: -4.72rem;
   margin-left: 3rem;
 }
 
@@ -105,7 +108,9 @@ body {
 .bar-btm {
   grid-area: btmline;
   display: flex;
-  margin-left: -2rem;
+  margin-top: 1.1rem;
+  /* margin-left: -2rem; */
+  gap: .5rem;
   background-color: #000000;
  }
 
@@ -153,7 +158,8 @@ body {
   grid-area: gallery;
   background-image: url(img/bgTexture.png);
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
+  height: 110%;
   margin-left: -4rem;
   margin-right: -4rem;
   z-index: -100000;
