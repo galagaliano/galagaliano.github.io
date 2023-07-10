@@ -24,7 +24,7 @@ body {
 .container {
   display: grid; 
   grid-auto-columns: 1fr; 
-  grid-template-columns: 1.3fr 1.6fr 1fr; 
+  grid-template-columns: 1.3fr 3fr 1fr; 
   grid-template-rows: 0.2fr 2.6fr 0.3fr;
   gap: 0px 0px; 
   grid-template-areas: 
@@ -41,9 +41,9 @@ body {
 
 .profile-header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  gap: 1.6rem;
+  gap: 2rem;
 }
 
 .portrait {
@@ -60,8 +60,8 @@ body {
 }
 
 .profile-name {
-  font-family: "Overpass", sans-serif;
   font-size: 1.9rem;
+  font-weight: 400;
   letter-spacing: -0.5px;
   color: #1d1d1d;
 }
@@ -69,45 +69,39 @@ body {
 .profile-description {
   justify-content: space-between;
   font-weight: 500;
-  line-height: 1.8rem;
+  line-height: 2rem;
   color: #5d5d5d;
   list-style: none;
   padding-left: 0;
 }
 
 .profile-info {
-  padding-top: 5%;
-  display: flex;
+  margin-top: 5vh;
   font-size: 1.2rem;
-  flex-direction: column;
-  gap: 1rem;
+  #5d5d5d
 }
 
-.info-section {
-  display: flex;
-  justify-content: space-between;
+tr, td {
+  padding-top: 1.5rem;
+  vertical-align: top;
 }
 
-.aside-title {
-  display: flex;
-  align-self: flex-start;
-}
-
-.aside-text {
-  display: flex;
-  align-self: flex-end;
-}
-
-.aside-title-extra {
-  display: flex;
-  align-self: flex-start;
-}
-
-.section-title {
+.info-header {
   font-family: "Overpass", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
   letter-spacing: -0.5px;
   color: #1d1d1d;
-  display: flex;
+}
+
+.sub-header {
+  font-size: 1.3rem;
+  color: #1d1d1d;
+  width: 30%;
+}
+
+.sub-header_special {
+  font-weight: bold;
 }
 
 .website__link:link,
@@ -122,10 +116,6 @@ body {
 .website__link:active {
    text-decoration: underline;
    color: #919191;
-}
-
-ul {
-  list-style: none;
 }
 
 .link__icon {
