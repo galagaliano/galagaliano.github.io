@@ -1,0 +1,60 @@
+*,
+*::after,
+::before{
+  margin: 0;
+  padding: : 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62,5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Cutive Mono", serif;
+  line-height: 1.6;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 2fr 1fr; 
+  grid-template-rows: 2fr 2.6fr 1fr;
+  grid-template-areas: 
+    ". . ."
+    ". content ."
+    ". . ."; 
+  background-color: #000000
+}
+
+.content {
+  grid-area: content;
+  align-items: center;
+  align-content: center;
+}
+
+.pdf__link:link, 
+.pdf__link:visited {
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  color: #e4e2d8;
+  display: block;
+  text-decoration: underline;
+  text-transform: uppercase;
+  transition: all .2s
+}
+
+.pdf__link:hover, 
+.pdf__link:active { 
+  text-decoration: none;
+  transform: translateY(-3px);
+}
+
