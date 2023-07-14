@@ -66,6 +66,7 @@
 
 @media (max-width: 59.4em) {
   .container {
+    grid-template-columns: minmax(fit-content);
     grid-template-rows: 1fr 1fr minmax(fit-content) max-content;
   }
 
@@ -130,9 +131,5 @@
   .slideshow-img {
     min-width: 100%;
     max-height: 100%;
-  }
-
-  .bar-btm {
-    margin-top: -11%;
   }
 }
