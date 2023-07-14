@@ -67,7 +67,7 @@
 @media (max-width: 59.4em) {
   .container {
     grid-template-columns: minmax(fit-content);
-    grid-template-rows: 1fr 1fr minmax(fit-content) max-content;
+    grid-template-rows: 1fr 1fr minmax(fit-content) fit-content;
   }
 
   .nav__link:link,
@@ -101,6 +101,11 @@
     padding: 1rem;
     margin-top: 1rem;
     font-size: 1.5rem;
+  }
+
+  .bar-btm {
+    justify-content: flex-end;
+    max-height: fit-content;
   }
 }
 
