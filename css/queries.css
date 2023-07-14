@@ -1,0 +1,138 @@
+/* CAROUSEL - Below 1400px - 87,5em */
+
+@media (max-width: 87.5em) {
+  .container {
+    display: grid;
+    grid-template-areas: 'sidebar sidebar sidebar sidebar' 'sidebar sidebar sidebar sidebar' 'gallery gallery gallery gallery' 'gallery gallery gallery gallery' 'btmline btmline btmline btmline';
+    grid-auto-columns: repeat(auto-fit, minmax(-10rem, 1fr));
+    grid-template-rows: 35vh repeat(2, auto-fit) 1fr;
+  }
+
+  .bar-top {
+    visibility: hidden;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0;
+    min-width: min-content;
+  }
+
+  .sidebar-nav {
+    margin-top: 2rem;
+    flex-direction: row;
+  }
+
+  .sidebar-nav__link {
+    transform: rotate(360deg);
+  }
+
+  .sidebar-nav__link:hover,
+  .sidebar-nav__link:active {
+    transform: rotate(360deg) translateY(-3px);
+  }
+
+  .sidebar-name {
+    writing-mode: horizontal-tb;
+    transform: rotate(360deg);
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+
+  .gallery {
+    align-content: center;
+    padding-right: 0;
+    padding-left: 3rem;
+    min-height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .fading-slideshow {
+    max-height: fit-content;
+  }
+
+  .bar-btm {
+    justify-content: flex-end;
+    max-width: max-content;
+  }
+}
+
+/* TABLETS - Below 950px - 59,4em */
+
+@media (max-width: 59.4em) {
+  .container {
+    grid-template-rows: 1fr 1fr minmax(fit-content) 1fr;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1.3rem;
+  }
+
+  .sidebar-name {
+    font-size: 6.5rem;
+  }
+
+  .gallery {
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-right: 0.4rem;
+  }
+
+  .fading-slideshow {
+    object-fit: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  .pdf__link:link,
+  .pdf__link:visited {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* MOBILE - Below 722px - 45,13em */
+
+@media (max-width: 45.13em) {
+  .sidebar {
+    justify-content: space-around;
+  }
+
+  .sidebar-name {
+    font-size: 5rem;
+    margin-bottom: -12%;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    background-image: none;
+    padding: -5%;
+    margin: -5%;
+    margin-left: -10%;
+  }
+
+  .slideshow-img {
+    min-width: 100%;
+    max-height: 100%;
+  }
+
+  .bar-btm {
+    margin-top: -11%;
+  }
+}
