@@ -29,7 +29,7 @@ body {
   grid-template-areas: 
     ". . ."
     ". content ."
-    ". . ."; 
+    ". content ."; 
   background-color: #000000
 }
 
