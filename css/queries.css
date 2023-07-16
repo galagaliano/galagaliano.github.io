@@ -170,13 +170,22 @@
   }
 
   .sidebar-nav {
-    justify-content: space-evenly;
     align-content: center;
     padding-left: 0;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+    justify-content: center;
+    margin-left: 0%;
+    font-size: 0.3rem;
   }
 
   .header {
-    font-size: 4rem;
+    font-size: 5rem;
+    margin-left: 0%;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 5rem;
   }
 
   .description {
@@ -185,8 +194,8 @@
 
   .bar-btm {
     font-size: 3rem;
-    margin-top: -30%;
-    magin-bottom: 0%;
+    margin-top: -20%;
+    margin-bottom: -30%;
     padding: 0;
   }
 
@@ -234,10 +243,11 @@
     margin-top: -30%;
     magin-bottom: 0%;
     padding: 0;
+    padding-top: 2%;
   }
 
   .description {
-    margin-top: -20%;
+    margin-top: -5%;
     flex-wrap: wrap;
     flex-direction: row;
   }
