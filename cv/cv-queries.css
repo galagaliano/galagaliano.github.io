@@ -1,0 +1,27 @@
+/* MOBILE - Below 500px - 31,25em */
+
+@media (max-width: 31.25em) {
+  .body {
+    font-size: 0.5rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+  }
+
+  .container {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.9fr 2.3fr 0.7fr;
+    grid-template-rows: 0.2fr 2.6fr 0.3fr;
+  }
+
+  tr,
+  td {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .link__icon-table {
+    visibility: hidden;
+  }
+}
