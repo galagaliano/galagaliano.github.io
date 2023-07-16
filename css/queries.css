@@ -66,8 +66,8 @@
 
 @media (max-width: 59.4em) {
   .container {
-    grid-template-columns: minmax(fit-content);
-    grid-template-rows: 1fr 1fr minmax(fit-content) 1fr;
+    grid-auto-rows: minmax(fit-content);
+    grid-auto-columns: minmax(fit-content);
   }
 
   .nav__link:link,
