@@ -37,16 +37,18 @@ body {
   grid-area: content;
   align-items: center;
   align-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: -4%;
 }
 
 .pdf__link:link, 
 .pdf__link:visited {
-  padding: 1rem;
   font-size: 1.6rem;
   text-align: center;
   font-weight: 600;
   color: #e4e2d8;
-  display: block;
   text-decoration: underline;
   text-transform: uppercase;
   transition: all .2s
